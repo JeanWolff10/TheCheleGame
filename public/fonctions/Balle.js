@@ -1,7 +1,7 @@
 function Balle(x, y, r, couleur, id) {
   var options = {
-    friction:frictionBalles,
-    restitution:restitutionBalles, // rebondir
+    friction:0.3,
+    restitution:0.6, // rebondir
     peutSauter:false
   }
   this.body = Bodies.circle(x, y, r, options);
